@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Card Price Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">Pokemon Card Price Finder</a></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <Button class="butt"><a href="#">Sign UP</a></Button>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="total">
+    <form class="TCG">
+        <input class="name" placeholder="Enter Pokemon name">
+        <button type="submit" onclick="rot(this)"><img width="50" height="50" src="https://img.icons8.com/plasticine/50/pokeball.png" alt="pokeball"/></button>
+    </form>
+    <div class="card" style="display: none">
+    </div>
+    <div class="set" style="display: none"></div>
+    <div class="rare" style="display: none"></div>
+    <div class="price" style="display: none"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+*{
+    text-decoration: none;
+}
+body{
+    background-color: whitesmoke;    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    margin: 0%;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+.navbar{
+    background-color: aquamarine;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 97%;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+li a{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-right: 25px;
+}
+.butt{
+    background-color: black;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+}
+.butt a{
+    color: white;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 15px;
+}
+p{
+    padding: 5px;
+    margin: 0%;
+}
+.total{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: hsl(160, 100%, 80%);
+    box-shadow: 2px 2px 5px rgb(67, 67, 67);
+    border-radius: 10px;
+    display: flex;
+    margin: 0%;
+    margin-top: 25px;
+    flex-direction: column;
+    align-items: center;
+}
+.TCG{
+    margin: 25px;
+    display: flex;
+    align-items: center;
+}
+.card{
+    display: flex;
+
+}
+.name{
+    font-size: 2rem;
+    font-weight: bold;
+    border: 1.5px solid hsl(0, 0%, 65%);
+    border-radius: 10px;
+    margin: 20px;
+    width: 370px;
+    text-transform: capitalize;
+}
+button[type="submit"]{
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: transform 0.3s ease-in-out;;
+}
+.rotate{
+    animation: spin 0.3s linear;
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.gencard{
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(67, 67, 67);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.set{
+    padding-top: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.rare{
+    padding-top: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.price{
+    color: rgb(64, 255, 0);
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 10px;
+}
+.errormsg{
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
