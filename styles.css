@@ -2,7 +2,7 @@
     text-decoration: none;
 }
 body{
-    background-color: whitesmoke;    
+    background: linear-gradient(to bottom right, #014871, #d7ede2);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,10 +14,11 @@ body{
     padding-bottom: 25px;
 }
 .navbar{
-    background-color: aquamarine;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
     padding-right: 15px;
     padding-left: 15px;
-    width: 97%;
+    width: 99%;
 }
 .navdiv{
     display: flex;
@@ -28,21 +29,23 @@ body{
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: white;
+    color: #ffffffb7;
 }
 li{
     list-style: none;
     display: inline-block;
 }
 li a{
-    color: white;
+    color: #ffffffb7;
     font-size: 1.3rem;
     font-weight: bold;
     margin-right: 25px;
 }
 .butt{
-    background-color: black;
+    background: linear-gradient(to bottom, #00ffe9, #2e3192);
     margin-left: 10px;
+    border: none;
+    box-shadow: 2px 2px 5px rgb(67, 67, 67);
     border-radius: 10px;
     padding: 10px;
     width: 90px;
@@ -59,7 +62,8 @@ p{
 }
 .total{
     font-family:Arial, Helvetica, sans-serif;
-    background-color: hsl(160, 100%, 80%);
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
     box-shadow: 2px 2px 5px rgb(67, 67, 67);
     border-radius: 10px;
     display: flex;
@@ -80,7 +84,9 @@ p{
 .name{
     font-size: 2rem;
     font-weight: bold;
-    border: 1.5px solid hsl(0, 0%, 65%);
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border: none;
     border-radius: 10px;
     margin: 20px;
     width: 370px;
@@ -128,7 +134,7 @@ button[type="submit"]{
     font-weight: bold;
 }
 .price{
-    color: rgb(64, 255, 0);
+    color: white;
     font-size: 3rem;
     font-weight: bold;
     padding: 10px;
