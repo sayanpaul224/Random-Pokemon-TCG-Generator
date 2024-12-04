@@ -50,13 +50,9 @@ async function getweather(name){
 
 function dispweather(data){
     console.log(data);
-    card.style.display="flex";
     card.innerHTML = '';
-    set.style.display="flex";
     set.innerHTML = '';
-    price.style.display="flex";
     price.innerHTML = '';
-    rare.style.display="flex";
     rare.innerHTML = '';
     if (data.data.length > 0) {
         const randomCard = data.data[Math.floor(Math.random() * data.data.length)];

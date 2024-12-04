@@ -1,8 +1,11 @@
 *{
     text-decoration: none;
+    font-family: "Ubuntu";
+    font-weight: normal;
 }
 body{
-    background: linear-gradient(to bottom right, #014871, #d7ede2);
+    /*background: linear-gradient(to bottom right, #014871, #d7ede2);*/
+    background-color: #f2f9ff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,7 +17,8 @@ body{
     padding-bottom: 25px;
 }
 .navbar{
-    background: rgba(255,255,255,0.15);
+    /*background: rgba(255,255,255,0.15);*/
+    background-color: #81bfda;
     backdrop-filter: blur(10px);
     padding-right: 15px;
     padding-left: 15px;
@@ -27,16 +31,15 @@ body{
 }
 .logo a{
     font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: #ffffffb7;
+    color: #ffffff;
 }
 li{
     list-style: none;
     display: inline-block;
 }
 li a{
-    color: #ffffffb7;
+    color: #ffffff;
     font-size: 1.3rem;
     font-weight: bold;
     margin-right: 25px;
@@ -61,8 +64,8 @@ p{
     margin: 0%;
 }
 .total{
-    font-family:Arial, Helvetica, sans-serif;
-    background: rgba(255,255,255,0.1);
+    /*background: rgba(255,255,255,0.1);*/
+    background-color: #14b1be;
     backdrop-filter: blur(10px);
     box-shadow: 2px 2px 5px rgb(67, 67, 67);
     border-radius: 10px;
@@ -71,21 +74,20 @@ p{
     margin-top: 25px;
     flex-direction: column;
     align-items: center;
+    height: 647px;
+    width: 524px;
 }
 .TCG{
     margin: 25px;
     display: flex;
     align-items: center;
 }
-.card{
-    display: flex;
-
-}
 .name{
     font-size: 2rem;
     font-weight: bold;
-    background: rgba(255,255,255,0.15);
-    backdrop-filter: blur(10px);
+    /*background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);*/
+    background-color: #d5fbff;
     border: none;
     border-radius: 10px;
     margin: 20px;
@@ -116,6 +118,18 @@ button[type="submit"]{
         transform: rotate(360deg);
     }
 }
+.card{
+    display: flex;
+    height: 342px;
+    width: 245px;
+}
+.default{
+    border-radius: 13px;
+    box-shadow: 2px 2px 5px rgb(67, 67, 67);
+    height: 342px;
+    width: 245px;
+}
+
 .gencard{
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgb(67, 67, 67);
