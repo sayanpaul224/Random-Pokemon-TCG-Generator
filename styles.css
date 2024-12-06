@@ -119,6 +119,9 @@ button[type="submit"]{
     }
 }
 .card{
+    background: url(backcard.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     display: flex;
     height: 342px;
     width: 245px;
