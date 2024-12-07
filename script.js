@@ -1,9 +1,11 @@
 const TCG = document.querySelector(".TCG");
 const pokein = document.querySelector(".name");
 const card = document.querySelector(".card");
+const text = document.querySelector(".text");
 const set = document.querySelector(".set");
 const price = document.querySelector(".price");
 const rare = document.querySelector(".rare");
+const errorDisplay = document.querySelector(".error");
 const key = "30b4ce61-7014-408d-9266-0a541751afa6";
 
 function rot(button){
@@ -21,12 +23,12 @@ TCG.addEventListener("submit", async event => {
 
     if(name){
         try{
-            const nameD = await getweather(name);
-            dispweather(nameD);
+            const nameD = await getpoke(name);
+            disppoke(nameD);
         }
         catch(error){
             console.error(error);
-            displayError(error);
+            displayError("Please Enter the correct Pokemon name");
         }
     }
     else{
@@ -34,7 +36,7 @@ TCG.addEventListener("submit", async event => {
     }
 });
 
-async function getweather(name){
+async function getpoke(name){
     const apiUrl = `https://api.pokemontcg.io/v2/cards?q=name:${name}`;
 
     const response = await fetch(apiUrl);
@@ -43,13 +45,14 @@ async function getweather(name){
     if(!response.ok){
         throw new Error("Cannot find the Pokemon");
     }
-
     return await response.json();
     
 }
 
-function dispweather(data){
+function disppoke(data){
     console.log(data);
+    text.style.display = "flex";
+    errorDisplay.style.display = "none";
     card.innerHTML = '';
     set.innerHTML = '';
     price.innerHTML = '';
@@ -78,12 +81,9 @@ function dispweather(data){
             
 
 function displayError(message){
-
-    const errorDisplay = document.createElement("p");
     errorDisplay.textContent = message;
-    errorDisplay.classList.add("errormsg");
 
-    card.textContent = "";
-    card.style.display = "flex";
-    card.appendChild(errorDisplay);
+    card.innerHTML = "";
+    text.style.display = "none";
+    errorDisplay.style.display = "flex";
 }
